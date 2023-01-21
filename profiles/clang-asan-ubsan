@@ -1,0 +1,15 @@
+[settings]
+os=Linux
+arch=x86_64
+arch_build=x86_64
+compiler=clang
+compiler.version=14
+build_type=Debug
+compiler.libcxx=libc++
+compiler.sanitizers=AddressUndefinedBehavior
+[options]
+[build_requires]
+[env]
+CFLAGS=-fsanitize=address,undefined
+CXXFLAGS=-fsanitize=address,undefined
+LDFLAGS=-fsanitize=address,undefined
